@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="synthwave">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digidex 👾</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main-container">
+        <header class="text-center">
+            <img src="assets/img/digimon.png" alt="digimon" class="titleImg mt-6 mb-8 h-48">
+        </header>
+        <div class="container mx-auto px-4">
+            <input type="text" id="nameInput" placeholder="Buscar por nombre" class="input input-bordered input-sm w-full max-w-xs">
+            <select id="levelSelect" class="select select-bordered select-sm w-full max-w-xs">
+                <option value="">Todos los niveles</option>
+                <option value="Rookie">Rookie</option>
+                <option value="Champion">Champion</option>
+                <option value="Ultimate">Ultimate</option>
+                <option value="Mega">Mega</option>
+            </select>
+            <button onclick="getCharacters()" class="btn btn-sm btn-outline">Buscar</button>
+        </div>
+        <div class="cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"></div>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
